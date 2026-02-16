@@ -1,0 +1,242 @@
+/*Charlene Css*/
+
+/*Body*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+  background-color: #f8f9fa; /* Light grey background */
+  color: #212529; 
+}
+
+/* Teacher name styling */
+.teacher-name {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+/* Black text */
+.black-text {
+  color: #000000 !important;
+}
+
+/* Paragraph description text */
+.description {
+  font-size: 18px;
+  line-height: 1.6; 
+}
+
+/* Main banner */
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+}
+
+/* Homepage banner */
+.homepage-bg {
+  position: relative;
+  min-height: 400px; /* Height of banner */
+  background: url('../images/badmintonracket.jpg') center/cover no-repeat;
+  overflow: hidden;
+}
+
+/* Dark overlay for better text contrast */
+.homepage-bg::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.homepage-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Banner title */
+.homepage-bg h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Banner subtitle */
+.homepage-bg p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* About page banner */
+.about-bg {
+  position: relative;
+  min-height: 400px;
+  background-position: top center;
+  background: url('../images/badminton team.jpg') center/cover no-repeat;
+  overflow: hidden;
+}
+
+/* Dark overlay */
+.about-bg::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Content above overlay */
+.about-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Title styling */
+.about-bg h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Subtitle styling */
+.about-bg p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Video */
+.center-video {
+  max-width: 1000px; /* Restrict max width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Footer */
+footer.footer {
+  background-color: #212529; /* Dark background */
+  color: white;
+}
+
+/* Nav bar */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Heading */
+h2 {
+  color: #FFFFFF;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+h4 {
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* Table */
+.table {
+  background-color: white;
+  border: 1px solid #dee2e6;
+}
+
+/* Text size */
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Feature section for homepage */
+.features-section {
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 10px;
+}
+
+/* Features section title */
+.section-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Feature card box styling */
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+/* Hover animation for feature cards */
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Team section */
+
+/* Team member image */
+.team-photo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.team-section h4 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.team-section p {
+  margin-bottom: 5px;
+}
+
+/* Profile image for coaches and student leaders */
+.profile-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Coach photo size */
+.coach-photo {
+  width: 50%;
+  height: auto;
+  margin-left: 40px;
+}
+
+/* Instagram link */
+a:visited {
+  color: #FFFFFF;
+}
+
+/* bottom footer */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Push footer down */
+}
